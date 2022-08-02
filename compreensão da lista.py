@@ -1,4 +1,4 @@
 string = '012345678901234567890123456789012345678901234567890123456789'
-lista = [variavel if variavel != '9' else '.' for variavel in string]
+lista = [string[variavel:variavel + 10] for variavel in range(0, len(string), 10)]
 
-print(''.join(lista))
+print('.'.join(lista))
